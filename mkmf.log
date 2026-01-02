@@ -1,0 +1,11 @@
+DYLD_LIBRARY_PATH=.:/Users/User/miniconda3/envs/website/lib ASAN_OPTIONS=detect_leaks=0 "arm64-apple-darwin20.0.0-clang -o conftest -I/Users/User/miniconda3/envs/website/include/ruby-3.4.0/arm64-darwin20 -I/Users/User/miniconda3/envs/website/include/ruby-3.4.0/ruby/backward -I/Users/User/miniconda3/envs/website/include/ruby-3.4.0 -I/Users/User/miniconda3/envs/website/share/rubygems/gems/bigdecimal-3.3.1/ext/bigdecimal -D_FORTIFY_SOURCE=2 -isystem /Users/User/miniconda3/envs/website/include -mmacosx-version-min=11.0 -mmacosx-version-min=11.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/User/miniconda3/envs/website/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/ruby_1761227260312/work=/usr/local/src/conda/ruby-3.4.7 -fdebug-prefix-map=/Users/User/miniconda3/envs/website=/usr/local/src/conda-prefix -fstack-protector-strong -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fdeclspec  -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common conftest.c -L. -L/Users/User/miniconda3/envs/website/lib -L. -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/User/miniconda3/envs/website/lib -L/Users/User/miniconda3/envs/website/lib -fstack-protector-strong  -arch arm64   -lruby.3.4  -lpthread  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+

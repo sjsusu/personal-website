@@ -7,4 +7,4 @@ redirect_from:
   - /about.html
 ---
 
-My name is Serena and I am currently a first-year PhD Student at Texas Tech University. 
+My name is Serena and I am currently a second-year PhD Student at Texas Tech University. 
